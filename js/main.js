@@ -1,7 +1,5 @@
 
-var lista = [
-  { }
-];
+var lista = [{}];
 
 /* função que calcula o total: valor e quantidade*/
 function getTotal(lista) {
