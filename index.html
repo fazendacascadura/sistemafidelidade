@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><!-- está sendo chamado no config.js --></title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+  <body>
+    <nav class="brown lighten-2" role="navigation">
+      <div class="nav-wrapper container">
+        <img src="./logo.png">&nbsp;&nbsp;&nbsp;&nbsp;
+        <a id="logo-container" class="brand-logo">Sistema de Fidelidade</a>
+        <!-- menu mobile -->  
+        <ul id="nav-mobile" class="sidenav">
+          <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <br><br><br><br><br>
+    <div class="container">  
+      <div class="row">
+        <h5>Dados do Cliente</h5><hr>
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">person</i>
+              <input id="desc" type="text" class="validate" maxlength="40" minlength="3" placeholder="Nome Completo">
+              <label for="desc"></label>
+            </div>
+            <div class="input-field col s3">
+              <i class="material-icons prefix">phone</i>
+              <input id="quant" type="text" class="validate" minlength="8" maxlength="9" placeholder="Telefone">
+              <label for="quant"></label>
+            </div>
+            <div class="input-field col s3">
+              <i class="material-icons prefix">plus_one</i>
+              <input id="valor" type="number" class="validate" placeholder="Quantidade" min="1" max="10">
+              <label for="valor"></label>
+            </div>            
+          </div>
+        </form>
+        <span id="btnAtualizar" style="display: none;">
+          <span id="inputAtulizar"><!--chama no main.js--></span>
+          <button onclick="atualizarItem();" class="btn waves-effect waves-light green lighten-1" type="submit" name="action">Salvar<i class="material-icons right">save</i>
+          </button>
+          <button onclick="cancelarItem();" class="btn waves-red waves-effect waves-light grey" type="submit" name="action">Cancelar<i class="material-icons right">cancel</i>
+          </button>
+        </span>
+        <span id="btnAdd">
+          <button onclick="addItem();" class="btn waves-effect waves-light teal lighten-2" type="submit" name="action">Adicionar<i class="material-icons right">add</i>
+          </button>            
+          <button onclick="cancelarItem();" class="btn waves-effect waves-light grey" type="submit" name="action">Limpar Formulário<i class="material-icons right">replay</i>
+          </button>           
+          <button onclick="deletarLista();" class="btn waves-effect waves-light  red lighten-2" type="submit" name="action">Deletar Tabela<i class="material-icons right">delete_forever</i>
+          </button>            
+        </span>  
+      </div>
+
+      <span id="erros"><!-- chamando no main.js--></span>
+
+      <br><h5>Clientes Cadastrados</h5><hr>
+      <table id="listaTabela" class="responsive-table striped highlight centered black-text">
+        <!-- está sendo chamado no main.js -->
+      </table>
+      
+      <div class="page-footer blue-grey lighten-4 grey-text text-darken-2">          
+          <p style="font-size: 5px; opacity: 0;"><span id="valorTotal"></span></p>
+        </div>
+      </div>                
+    </div><br><br><br><br><br>    
+
+    <footer class="page-footer brown lighten-2">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Fazenda Cascadura</h5>
+            <p class="grey-text text-lighten-4">Todos os seus direitos reservados - Copyright 2020</p>
+          </div>            
+        </div>
+      </div>      
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/materialize.min.js"></script>
+  </body>
+</html>
+

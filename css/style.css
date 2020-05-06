@@ -1,0 +1,38 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+ table.highlight > tbody > tr:hover {
+  background-color: #efebe9;
+  transition: all .5s ease;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.page-footer{
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.valorTotal{
+  margin-left: 2.999rem;  
+  display: flex;  
+  font-size: 1px;
+}
+
+img{
+  height: 150px;
+  width: 150px;
+  
+}
+
