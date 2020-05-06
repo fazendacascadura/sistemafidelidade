@@ -1,8 +1,6 @@
 
 var lista = [
-  { "desc": "pão", "quant": "1", "valor": "5.40" },
-  { "desc": "manteiga", "quant": "12", "valor": "1.99" },
-  { "desc": "leite", "quant": "1", "valor": "15.00" },
+  { }
 ];
 
 /* função que calcula o total: valor e quantidade*/
