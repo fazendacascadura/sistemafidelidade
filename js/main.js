@@ -1,5 +1,7 @@
 
-var lista = [{}];
+var lista = [
+  {desc: "Waldir PQD", quant: "242424242", valor: "1"},
+];
 
 /* função que calcula o total: valor e quantidade*/
 function getTotal(lista) {
