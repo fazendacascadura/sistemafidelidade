@@ -29,11 +29,11 @@ function setLista(lista) {
 }
 
 /* formatando para a primeira letra ficar maiúscula*/
-// function formatDesc(desc) {
-//   var str = desc.toLowerCase();
-//   str = str.charAt(0).toUpperCase() + str.slice(1);
-//   return str;
-// }
+function formatDesc(desc) {
+  var str = desc;
+  /*str = str.charAt(0).toUpperCase() + str.slice(1);*/
+  return str;
+}
 
 /* função para receber somento numero */
 function formatQuant(quant) {
